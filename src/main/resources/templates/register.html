@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" th:href="${'//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css'}">
+</head>
+<body>
+    <div>
+        <div class="col-md-offset-4 col-md-4 ">
+            <div >
+                <input id="registerName" name="registerName" style="margin-top: 60px"  placeholder="请输入用户名"
+                       required="required"/>
+            </div>
+            <div >
+                <input id="registerPsw" name="registerPsw" type="password" style="margin-top: 30px" placeholder="请输入密码"
+                       required="required"/>
+            </div>
+
+            <div >
+                <button id="registerButton" type="submit" class="btn btn-info " style="margin-top: 30px">注&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;册</button>
+            </div>
+            <div >
+                <label for="registerButton" id="formTip" style="margin-top: 30px"></label>
+            </div>
+        </div>
+    </div>
+    <script th:src="${'//cdn.bootcss.com/jquery/3.3.1/jquery.min.js'}"></script>
+    <script th:src="${'//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js'}"></script>
+    <script th:src="@{js/register.js}"></script>
+</body>
+</html>
